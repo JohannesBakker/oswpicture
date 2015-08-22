@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DamageTableViewSection">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klQ-sb-DXR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
+                    <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="qyL-J7-dD7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="klQ-sb-DXR" secondAttribute="bottom" id="1AU-2w-Hex"/>
+                <constraint firstItem="klQ-sb-DXR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8kv-w3-qeJ"/>
+                <constraint firstItem="klQ-sb-DXR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ihJ-Wf-f4b"/>
+                <constraint firstAttribute="trailing" secondItem="klQ-sb-DXR" secondAttribute="trailing" id="rOl-Fi-aa0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnTitle" destination="klQ-sb-DXR" id="BaR-bK-rN6"/>
+            </connections>
+        </view>
+    </objects>
+</document>
